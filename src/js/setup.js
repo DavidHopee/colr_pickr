@@ -17,7 +17,7 @@
  * @namespace colorPickerComp
  * @type {object}
  */
-let colorPickerComp = new Object();
+var colorPickerComp = new Object();
 
 /**
  * @description Colr Pickr Constructor
@@ -361,7 +361,7 @@ document.addEventListener('mousedown', function () {
 });
 
 // Close the picker
-let closePicker = function () {
+var closePicker = function () {
 	// Update state
 	colorPickerComp.pickerOpen = false;
 
@@ -376,7 +376,7 @@ let closePicker = function () {
 };
 
 // Handles updates
-let updatePicker = function () {
+var updatePicker = function () {
 	// Calling Event to make all the necessary changes
 	colorPickerComp.colorChange({
 		h: colorPickerComp.hue,
