@@ -277,7 +277,8 @@ function ColorPicker(element, color) {
 })();
 
 // Keypress shortcuts
-colorPickerComp.keyShortcuts = function (event) {
+colorPickerComp.keyShortcuts = function (e) {
+	const key = e.keyCode;
 	// Loop through inputs element
 	for (let x in document.getElementsByTagName('INPUT')) {
 		// If iteration number is not longer a number...
@@ -297,7 +298,6 @@ colorPickerComp.keyShortcuts = function (event) {
 	}
 
 	// Define key code
-	const key = event.keyCode;
 
 	// Check for key code
 	switch (key) {
